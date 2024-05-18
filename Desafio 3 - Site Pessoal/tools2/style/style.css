@@ -1,0 +1,287 @@
+
+/*Fontes
+
+Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*Do Hyeon*/
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*Krona One*/
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/*Variaveis
+
+Cores*/
+:root{
+    --corbranca: #F6F6F6;
+    --corvioleta: #6557FF;
+}
+
+body{
+
+    background-color: #0D0D0D;
+    color: var(--corbranca);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.barra_navegacao{
+    
+    width: 40%;
+
+}
+
+.barra_navegacao_itens{
+
+    text-decoration: none;
+    font-family: "Do Hyeon", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    align-items: center;
+
+    
+}
+
+.barra_navegacao_itens_links{
+    display: flex;
+    text-decoration: none;
+    gap: 5px;
+    color: var(--corvioleta);
+}
+
+#link_principal::after{
+    content: " ";
+    width: 115px;
+    height: 3px;
+    border-radius: 6px;
+    background: var(--corvioleta);
+    position: absolute;
+    margin-top: 25px;
+}
+
+.barra_navegacao_itens_imagens{
+    height: 1.2rem;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    padding: 5% 15% 5% 15%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.box1_titulo{
+    text-decoration: none;
+    font-family: "Do Hyeon", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+strong{
+    text-decoration: none;
+    font-family: "Do Hyeon", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--corvioleta);
+}
+
+.box1_habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height:70%;
+}
+
+.box1_texto{
+
+    width: 110%;
+    height: 40%;
+
+    color: var(--corbranca);
+    font-family: "Lato", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+
+.box1_certificados{
+    height: 30%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.certificados{
+    border: 2px solid var(--corvioleta);
+
+    display: flex;
+    align-items: center;
+    
+    padding: 5% 20%;
+    border-radius: 8px;
+    color: var(--corbranca);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.certificados_imagem{
+    height: 1.3rem;
+}
+
+.box2{
+
+    width: 50%;
+    display: flex;
+    justify-content:flex-end;
+
+}
+
+.box2_circulo{
+    background-color: var(--corvioleta);
+    border-radius: 50%;
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+   
+}
+
+.box2_imagem{
+    width: 103%;
+    height: 103%;
+}
+
+
+footer{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #B9B9B9;
+
+}
+
+.barra{
+    background-color: var(--corvioleta);
+    width: 100%;
+    height: 1px;
+}
+
+.logo_alura{
+
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (max-width: 700px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    header{
+        width: 100%;
+        margin: 4% 0% 0% 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .barra_navegacao{
+        width: 100%;
+    }
+    
+    main{
+
+        padding: 0%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0% 0% 4% 0%;
+        justify-content:center;
+
+    }
+    .box1{
+        padding: 0%;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 50px;
+
+    }
+    .box1_habilidades{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+    }
+    .box1_titulo{
+        font-size: 1.3rem;
+    }
+    .box1_texto{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .box1_certificados{
+        margin: 0%;
+        width: 100%;
+    }
+    .certificados{
+        padding: 3% 10%;
+    }
+    .box2{
+        padding: 0%;
+
+        height: 40%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer{
+        width: 100%;
+    }
+    .barra{
+        width: 100%;
+    }
+
+}    
